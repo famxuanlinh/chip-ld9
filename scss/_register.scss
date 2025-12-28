@@ -245,3 +245,258 @@
     }
   }
 }
+
+// New register section styles
+.register-wrapper-new {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+  position: relative;
+  min-height: 600px;
+
+  @include maxw(768) {
+    max-width: 375px;
+    min-height: 961px;
+    padding: 0 0 40px;
+  }
+}
+
+.register-title-new {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 665px;
+  max-width: calc(100% - 48px);
+  height: 104px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+
+  @include maxw(768) {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 360px;
+    max-width: calc(100% - 14px);
+    height: 120px;
+  }
+
+  &-bg-outer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #249823;
+    border-radius: 0;
+
+    @include maxw(768) {
+      height: 40px;
+    }
+  }
+
+  &-bg-inner {
+    position: absolute;
+    top: 0;
+    left: 6px;
+    width: calc(100% - 12px);
+    height: 104px;
+    background-color: #4ab749;
+    border-radius: 0;
+
+    @include maxw(768) {
+      width: calc(100% - 12px);
+      height: 120px;
+    }
+  }
+
+  &-text {
+    position: relative;
+    z-index: 1;
+    padding: 24px 32px 16px;
+    color: #ffffff;
+    font-family: "SF Pro Rounded", sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 2em;
+    text-align: center;
+    white-space: nowrap;
+
+    @include maxw(768) {
+      font-size: 28px;
+      line-height: 1.4285714285714286em;
+      padding: 24px 32px 16px;
+      white-space: normal;
+    }
+
+    &-desktop {
+      @include maxw(768) {
+        display: none;
+      }
+    }
+
+    &-mobile {
+      display: none;
+
+      @include maxw(768) {
+        display: block;
+      }
+    }
+  }
+}
+
+.register-content-new {
+  position: relative;
+  top: 40px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 64px;
+  padding: 100px 0 64px 64px;
+
+  @include maxw(768) {
+    top: 40px;
+    flex-direction: column;
+    border-radius: 0 0 24px 24px;
+    padding: 120px 24px 24px;
+    gap: 0;
+    align-items: stretch;
+  }
+}
+
+.register-form-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  width: 100%;
+
+  @include maxw(768) {
+    gap: 24px;
+    width: 100%;
+  }
+}
+
+.register-form-new {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+
+  @include maxw(768) {
+    gap: 24px;
+  }
+}
+
+.register-form-field {
+  position: relative;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.register-form-input-new {
+  width: 100%;
+  padding: 24px;
+  background-color: #fcfcfc;
+  border: 1.5px solid #c2c2c2;
+  border-radius: 16px;
+  font-family: "SF Pro Rounded", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3333333333333333em;
+  color: #57595c;
+  transition: all 0.3s ease;
+
+  &::placeholder {
+    color: #9fa59e;
+    opacity: 1;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: #4ab749;
+    background-color: #ffffff;
+  }
+}
+
+.register-form-label-new {
+  position: absolute;
+  left: 16px;
+  top: -12px;
+  font-family: "SF Pro Rounded", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5em;
+  color: #57595c;
+  pointer-events: none;
+  background-color: #ffffff;
+  padding: 0 8px;
+}
+
+.register-form-button {
+  width: 100%;
+  padding: 24px;
+  background-color: #ffa218;
+  border: none;
+  border-radius: 16px;
+  font-family: "SF Pro Rounded", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3333333333333333em;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #ff9914;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.register-image-wrapper {
+  flex-shrink: 0;
+  width: 504px;
+  height: 560px;
+  display: flex;
+  align-items: flex-end;
+
+  @include maxw(768) {
+    width: 100%;
+    height: 416.67px;
+    margin-top: 0;
+    align-items: flex-start;
+  }
+}
+
+.register-image-new {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: bottom;
+
+  @include maxw(768) {
+    object-position: top;
+  }
+
+  &-desktop {
+    @include maxw(768) {
+      display: none;
+    }
+  }
+
+  &-mobile {
+    display: none;
+
+    @include maxw(768) {
+      display: block;
+    }
+  }
+}

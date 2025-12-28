@@ -122,7 +122,7 @@
     }
 
     &-break {
-      display: none;
+      // display: none;
 
       @include max-lg {
         display: block;
@@ -166,13 +166,12 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
     width: 1080px;
-    margin: 0 auto;
-    padding: 0 180px;
+    margin: auto;
 
     @include max-lg {
       padding: 0 25px;
       grid-template-columns: 1fr;
-      width: 327px;
+      width: 100%;
       max-width: 100%;
     }
   }
@@ -247,4 +246,3 @@
     }
   }
 }
-

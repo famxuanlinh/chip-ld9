@@ -1,17 +1,18 @@
 @use "mixin" as *;
 
 .hero {
-  background-image: url(/public/c1-bg.svg);
+  background-image: url(/public/c1-bg.png);
   background-repeat: no-repeat;
+  background-position: bottom;
   width: 100%;
   background-size: cover;
   overflow: hidden;
   margin-top: -80px;
 
   @include maxw(768) {
-    background-image: url(/public/c1-bg-mobile.svg);
-    background-size: cover;
-    background-position: bottom;
+    background-image: url(/public/c1-bg-mobile.png);
+    background-size: contain;
+    background-position: top;
     padding-top: 80px;
     // margin-top: 64px;
   }
@@ -64,7 +65,7 @@
       }
 
       &-img {
-        width: 295px;
+        width: 250px;
         @include maxw(1180) {
           width: 148px;
         }
@@ -75,6 +76,17 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px; /* 109.091% */
+
+        @include maxw(1180) {
+          font-size: 28px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 32px; /* 114.286% */
+        }
       }
     }
 

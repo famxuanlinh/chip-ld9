@@ -16,46 +16,6 @@
     <link rel="stylesheet" href="css/app.css" />
   </head>
   <body style="position: relative">
-    <div id="register-to-try" class="register-to-try hide">
-      <div
-        class="flex-center w-full"
-        style="flex-direction: column; position: relative"
-      >
-        <div class="uk-position-bottom-center">
-          <a href="#modal-try" uk-toggle class="flex-center">
-            <img
-              class="register-to-try-destop"
-              src="public/banner-destop.png"
-              alt=""
-            />
-            <img
-              class="register-to-try-mobile"
-              style="
-                max-height: 140px;
-                -webkit-filter: drop-shadow(1px 1px 1px #aaaaaa);
-                filter: drop-shadow(0 0 0.55rem #c6c6c6);
-              "
-              src="public/banner-mobile.png"
-              alt=""
-            />
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="advisory">
-      <a
-        class="advisory-item zalo"
-        target="_blank"
-        href="https://zalo.me/0965901801"
-      >
-        <img src="public/icon/zalo-icon.png" alt="" />
-        <span>Zalo</span>
-      </a>
-      <a class="advisory-item phone" href="tel:0965 901 801">
-        <img src="public/icon/hotline-icon.png" alt="" />
-        <span>0965901801</span>
-      </a>
-    </div>
     <!----Header, menu -->
     <div id="header" uk-sticky style="z-index: 11" class="header-new">
       <div class="uk-container">
@@ -194,20 +154,20 @@
         <div class="hero-container">
           <div class="hero-content">
             <div class="hero-content-sub-title">
-              Tiếng Anh Online cho bé 4-12 tuổi
+              Tiếng Anh Online lớp nhóm 1:4 cho bé 4 -12 tuổi
             </div>
             <div class="hero-content-title">
-              Thỏa sức thực hành
+              Lớp nhóm 1-4 <br />Học vui cùng bạn
               <div
                 class="flex-items-center hero-content-title-item"
                 style="
                   color: linear-gradient(90deg, #ef673a 0.1%, #ffba1a 184.62%);
                 "
               >
-                Tiếng Anh
+                Vững nền tảng
                 <img
                   class="hero-content-title-img"
-                  src="public/c1-luu-loat.svg"
+                  src="public/c1-tieng-anh.svg"
                   alt=""
                 />
               </div>
@@ -227,7 +187,7 @@
                   alt=""
                 />
                 <p class="hero-content-desc-item">
-                  Học 1 kèm 1 với giáo viên nước ngoài hạng A
+                  Học 1:4 với giáo viên nước ngoài hạng A
                 </p>
               </div>
               <div class="flex-items-center space-x-3">
@@ -238,9 +198,7 @@
                   src="public/icon/c1-check.svg"
                   alt=""
                 />
-                <p class="hero-content-desc-item">
-                  Chương trình học tương tác game hóa thu hút trẻ em
-                </p>
+                <p class="hero-content-desc-item">Sĩ số nhỏ, tương tác cao</p>
               </div>
               <div class="flex-items-center space-x-3">
                 <img
@@ -251,7 +209,7 @@
                   alt=""
                 />
                 <p class="hero-content-desc-item">
-                  Dịch vụ chăm sóc đồng hành 5 sao
+                  Phương pháp game hóa và hoạt động nhóm đa dạng
                 </p>
               </div>
             </div>
@@ -259,8 +217,9 @@
               <a
                 href="#modal-center"
                 uk-toggle
+                style="background-color: #ff9914"
                 class="button-primary button-primary-big"
-                >Đăng ký học thử
+                >Đăng ký tư vấn
               </a>
             </div>
           </div>
@@ -273,32 +232,34 @@
           <div class="teacher-card">
             <img
               class="teacher-card-icon"
+              src="public/icon/t2-book.svg"
+              alt="teacher"
+            />
+
+            <p class="teacher-card-title">10.000+</p>
+            <p class="teacher-card-desc">Lớp học hoàn thành</p>
+          </div>
+          <div class="teacher-card" style="background-color: #8e59ff">
+            <img
+              class="teacher-card-icon"
+              src="public/icon/c7-teacher.svg"
+              alt="teacher"
+            />
+
+            <p class="teacher-card-title">700+</p>
+            <p class="teacher-card-desc">Giáo viên nước ngoài hạng A</p>
+          </div>
+          <div class="teacher-card" style="background-color: #ff9914">
+            <img
+              class="teacher-card-icon"
               src="public/icon/c3-gradunation-cap.png"
               alt="teacher"
             />
 
-            <p class="teacher-card-title">100%</p>
-            <p class="teacher-card-desc">Chứng chỉ Quốc tế</p>
-          </div>
-          <div class="teacher-card">
-            <img
-              class="teacher-card-icon"
-              src="public/icon/c3-magnifying.png"
-              alt="teacher"
-            />
-
-            <p class="teacher-card-title">6</p>
-            <p class="teacher-card-desc">bước tuyển dụng</p>
-          </div>
-          <div class="teacher-card">
-            <img
-              class="teacher-card-icon"
-              src="public/icon/c3-crown.png"
-              alt="teacher"
-            />
-
-            <p class="teacher-card-title">5%</p>
-            <p class="teacher-card-desc">ứng viên được chọn</p>
+            <p class="teacher-card-title">7.000+</p>
+            <p class="teacher-card-desc">
+              Học viên chinh phục tiếng Anh thành công
+            </p>
           </div>
         </div>
       </div>
@@ -395,6 +356,142 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- Điểm khác biệt - Desktop -->
+    <div class="difference-section uk-visible@l">
+      <div class="difference-container">
+        <div class="difference-header">
+          <img
+            src="public/section6/vector-decoration.svg"
+            alt=""
+            class="difference-vector"
+          />
+          <h2 class="difference-title">
+            Điểm khác biệt khiến hơn 10.000+ phụ huynh<br />
+            tin chọn Chip Chip
+          </h2>
+        </div>
+
+        <div class="difference-content">
+          <div class="difference-card">
+            <img
+              src="public/section6/card1-background.svg"
+              alt=""
+              class="difference-card-bg"
+            />
+            <div class="difference-card-frame">
+              <div class="difference-card-rectangle"></div>
+              <div class="difference-card-inner">
+                <h3 class="difference-card-title">
+                  X2 tương tác với<br />
+                  sĩ số nhỏ
+                </h3>
+                <p class="difference-card-desc">
+                  Sĩ số 1:4 giúp từng bé đều có cơ hội giao tiếp và thể hiện
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="difference-card">
+            <img
+              src="public/section6/card2-background.svg"
+              alt=""
+              class="difference-card-bg"
+            />
+            <div class="difference-card-frame">
+              <div class="difference-card-rectangle"></div>
+              <div class="difference-card-inner">
+                <h3 class="difference-card-title">
+                  100% giáo viên nước ngoài hạng A
+                </h3>
+                <p class="difference-card-desc">
+                  Hơn 700+ giáo viên nước ngoài đều có chứng chỉ giảng dạy quốc
+                  tế (TESOL/TEFL) và được đào tạo chuyên sâu về lớp nhóm cho trẻ
+                  em
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="difference-card">
+            <img
+              src="public/section6/card3-background.svg"
+              alt=""
+              class="difference-card-bg"
+            />
+            <div class="difference-card-frame">
+              <div class="difference-card-rectangle"></div>
+              <div class="difference-card-inner">
+                <h3 class="difference-card-title">
+                  Phương pháp game hóa thú vị
+                </h3>
+                <p class="difference-card-desc">
+                  Hoạt động học tập siêu thú vị thông qua game hóa giúp trẻ hào
+                  hứng và yêu thích học tiếng Anh
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="difference-cta">
+          <a href="#modal-center" uk-toggle class="difference-btn">
+            Đăng ký tư vấn
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lớp học trực tuyến -->
+    <div class="online-class space-y-4">
+      <div class="online-class-title">
+        <div class="flex-center">
+          <div style="position: relative">
+            Lớp học trực tuyến <br class="online-class-break" />
+            tại Chip Chip có gì?
+            <img
+              class="online-class-title-line"
+              src="public/c2-line.svg"
+              alt="line"
+            />
+          </div>
+        </div>
+      </div>
+      <img class="online-class-img" src="public/c3-bg.png" alt="bg" />
+      <div class="online-class-body">
+        <div class="online-class-card first">
+          <p class="online-class-card-number">01</p>
+          <p class="online-class-card-title">Trước buổi học</p>
+          <p class="online-class-card-desc">
+            Trước buổi học Xem nội dung kiến thức trước khi buổi học diễn ra
+          </p>
+        </div>
+        <div class="online-class-card second">
+          <p class="online-class-card-number">02</p>
+          <p class="online-class-card-title">Trong buổi học</p>
+          <p class="online-class-card-desc">
+            Học online 1 kèm 1 với giáo viên nước ngoài hạng A trong lớp
+          </p>
+        </div>
+        <div class="online-class-card third">
+          <p class="online-class-card-number">03</p>
+          <p class="online-class-card-title">Sau buổi học</p>
+          <p class="online-class-card-desc">
+            Luyện tập tiếng Anh dưới dạng trò chơi tương tác sinh động
+          </p>
+        </div>
+      </div>
+      <div class="hero-content-btn flex-center">
+        <a
+          href="#modal-center"
+          uk-toggle
+          style="width: fit-content"
+          class="button-primary button-primary-big"
+          >Đăng ký học thử
+        </a>
       </div>
     </div>
 
@@ -502,56 +599,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- Lớp học trực tuyến -->
-    <div class="online-class space-y-4">
-      <div class="online-class-title">
-        <div class="flex-center">
-          <div style="position: relative">
-            Lớp học trực tuyến <br class="online-class-break" />
-            tại Chip Chip có gì?
-            <img
-              class="online-class-title-line"
-              src="public/c2-line.svg"
-              alt="line"
-            />
-          </div>
-        </div>
-      </div>
-      <img class="online-class-img" src="public/c3-bg.png" alt="bg" />
-      <div class="online-class-body">
-        <div class="online-class-card first">
-          <p class="online-class-card-number">01</p>
-          <p class="online-class-card-title">Trước buổi học</p>
-          <p class="online-class-card-desc">
-            Trước buổi học Xem nội dung kiến thức trước khi buổi học diễn ra
-          </p>
-        </div>
-        <div class="online-class-card second">
-          <p class="online-class-card-number">02</p>
-          <p class="online-class-card-title">Trong buổi học</p>
-          <p class="online-class-card-desc">
-            Học online 1 kèm 1 với giáo viên nước ngoài hạng A trong lớp
-          </p>
-        </div>
-        <div class="online-class-card third">
-          <p class="online-class-card-number">03</p>
-          <p class="online-class-card-title">Sau buổi học</p>
-          <p class="online-class-card-desc">
-            Luyện tập tiếng Anh dưới dạng trò chơi tương tác sinh động
-          </p>
-        </div>
-      </div>
-      <div class="hero-content-btn flex-center">
-        <a
-          href="#modal-center"
-          uk-toggle
-          style="width: fit-content"
-          class="button-primary button-primary-big"
-          >Đăng ký học thử
-        </a>
       </div>
     </div>
 
@@ -665,174 +712,288 @@
       </div>
     </div>
 
-    <!-- Đăng ký  -->
-    <div id="form-register" class="register-wrapper uk-position-relative">
-      <div class="uk-child-width-1-2 uk-flex uk-flex-center">
-        <div class="register">
-          <img src="public/c10-img.png" alt="register" class="register-img" />
-          <div class="register-content exeption">
-            <div class="register-title">
-              <div class="flex-center">
-                <div style="position: relative">
-                  Tặng suất học trải nghiệm và đánh giá trình độ miễn phí
-                  <img
-                    class="register-title-line"
-                    src="public/c2-line-orange.svg"
-                    alt="line"
-                  />
+    <!-- Điểm khác biệt - Mobile -->
+    <div class="difference-section uk-hidden@l">
+      <div class="difference-container">
+        <div class="difference-header">
+          <img
+            src="public/section6/vector-decoration.svg"
+            alt=""
+            class="difference-vector-mobile"
+          />
+          <h2 class="difference-title-mobile">
+            Điểm khác biệt khiến hơn<br />
+            10.000+ phụ huynh<br />
+            tin chọn Chip Chip
+          </h2>
+        </div>
+
+        <div class="difference-scroll-container" uk-slider="center: false">
+          <div class="uk-slider-container">
+            <div class="uk-slider-items difference-scroll-items">
+              <div class="difference-card-mobile">
+                <img
+                  src="public/section6/card1-background.svg"
+                  alt=""
+                  class="difference-card-bg"
+                />
+                <div class="difference-card-frame">
+                  <div class="difference-card-rectangle"></div>
+                  <div class="difference-card-inner">
+                    <h3 class="difference-card-title-mobile">
+                      X2 tương tác với<br />
+                      sĩ số nhỏ
+                    </h3>
+                    <p class="difference-card-desc-mobile">
+                      Sĩ số 1:4 giúp từng bé đều có cơ hội giao tiếp và thể hiện
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div></div>
+
+              <div class="difference-card-mobile">
+                <img
+                  src="public/section6/card2-background.svg"
+                  alt=""
+                  class="difference-card-bg"
+                />
+                <div class="difference-card-frame">
+                  <div class="difference-card-rectangle"></div>
+                  <div class="difference-card-inner">
+                    <h3 class="difference-card-title-mobile">
+                      100% giáo viên nước ngoài hạng A
+                    </h3>
+                    <p class="difference-card-desc-mobile">
+                      Hơn 700+ giáo viên nước ngoài đều có chứng chỉ giảng dạy
+                      quốc tế (TESOL/TEFL) và được đào tạo chuyên sâu về lớp
+                      nhóm cho trẻ em
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="difference-card-mobile">
+                <img
+                  src="public/section6/card3-background.svg"
+                  alt=""
+                  class="difference-card-bg"
+                />
+                <div class="difference-card-frame">
+                  <div class="difference-card-rectangle"></div>
+                  <div class="difference-card-inner">
+                    <h3 class="difference-card-title-mobile">
+                      Phương pháp game hóa thú vị
+                    </h3>
+                    <p class="difference-card-desc-mobile">
+                      Hoạt động học tập siêu thú vị thông qua game hóa giúp trẻ
+                      hào hứng và yêu thích học tiếng Anh
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <form class="text-left register-form">
-              <div>
-                <label for="name" class="register-form-label"
-                  >Tên của con <span style="color: red">*</span></label
-                >
-                <input
-                  class="uk-input register-form-input"
-                  type="text"
-                  placeholder="Nhập tên của con"
-                  aria-label="Input"
-                  name="name"
-                  id="name"
-                />
-              </div>
-              <div>
-                <label for="name" class="register-form-label"
-                  >Năm sinh <span style="color: red">*</span></label
-                >
-                <div
-                  uk-form-custom="target: > * > span:first-child"
-                  style="
-                    border-radius: 999px;
-                    width: 100%;
-                    background-color: #fff;
-                  "
-                >
-                  <select
-                    class="w-full"
-                    aria-label="Custom controls"
-                    style="color: #535557; height: 44px; border-radius: 9999px"
-                  >
-                    <option value="">Chọn năm sinh</option>
-                    <option value="2010">2010</option>
-                    <option value="2011">2011</option>
-                    <option value="2012">2012</option>
-                    <option value="2013">2013</option>
-                    <option value="2014">2014</option>
-                    <option value="2015">2015</option>
-                    <option value="2016">2016</option>
-                    <option value="2017">2017</option>
-                    <option value="2018">2018</option>
-                    <option value="2019">2019</option>
-                    <option value="2019">2020</option>
-                    <option value="2019">2021</option>
-                  </select>
-                  <button
-                    class="register-form-select"
-                    type="button"
-                    tabindex="-1"
-                    style="border-radius: 999px; text-transform: none"
-                  >
-                    <span class="uk-margin-remove"></span>
-                    <span uk-icon="icon: chevron-down"></span>
-                  </button>
-                </div>
-              </div>
-              <div>
-                <label for="name" class="register-form-label"
-                  >Số điện thoại <span style="color: red">*</span></label
-                >
-                <input
-                  class="uk-input register-form-input"
-                  type="text"
-                  placeholder="Số điện thoại của phụ huynh"
-                  aria-label="Input"
-                  name="name"
-                  id="name"
-                />
-              </div>
-              <div
-                class="uk-flex uk-flex-center"
-                style="margin-top: 12px; height: 60px"
-              >
-                <button
-                  class="button-primary"
-                  style="
-                    height: 100%;
-                    width: 100%;
-                    background-color: #fff;
-                    color: #339316;
-                    border-color: transparent;
-                  "
-                >
-                  Đăng ký ngay
-                </button>
-              </div>
-            </form>
           </div>
+        </div>
+
+        <div class="difference-cta">
+          <a href="#modal-center" uk-toggle class="difference-btn-mobile">
+            Đăng ký tư vấn
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq container">
+      <div class="faq-title">Các câu hỏi thường gặp</div>
+      <ul uk-accordion="multiple: true" class="divide-y divide-dashed">
+        <li class="uk-open">
+          <a class="uk-accordion-title" href>
+            <p class="flex items-start">
+              Lớp nhóm có đảm bảo con được nói nhiều không?
+            </p></a
+          >
+          <div class="uk-accordion-content">
+            <p>
+              Chip Chip là nền tảng học tiếng Anh trực tuyến dành cho trẻ em từ
+              5-12 tuổi. Với sứ mệnh giúp hàng triệu trẻ em Việt Nam có thể sử
+              dụng tiếng Anh như một ngôn ngữ thứ Hai, Chip Chip nỗ lực tạo ra
+              một môi trường tương tác hoàn toàn bằng tiếng Anh với những giáo
+              viên nước ngoài giỏi, xây dựng chương trình học tập trung vào giúp
+              các con khơi gợi niềm yêu thích tiếng Anh, tự tin sử dụng tiếng
+              Anh để giao tiếp thành thạo và phát âm giọng chuẩn bản xứ.
+            </p>
+          </div>
+        </li>
+        <li class="uk-open">
+          <a class="uk-accordion-title" href>
+            <p class="flex items-start">
+              Nếu con nhút nhát thì có phù hợp không?
+            </p></a
+          >
+          <div class="uk-accordion-content">
+            <p>
+              Chip Chip là nền tảng học tiếng Anh trực tuyến dành cho trẻ em từ
+              5-12 tuổi. Với sứ mệnh giúp hàng triệu trẻ em Việt Nam có thể sử
+              dụng tiếng Anh như một ngôn ngữ thứ Hai, Chip Chip nỗ lực tạo ra
+              một môi trường tương tác hoàn toàn bằng tiếng Anh với những giáo
+              viên nước ngoài giỏi, xây dựng chương trình học tập trung vào giúp
+              các con khơi gợi niềm yêu thích tiếng Anh, tự tin sử dụng tiếng
+              Anh để giao tiếp thành thạo và phát âm giọng chuẩn bản xứ.
+            </p>
+          </div>
+        </li>
+        <li class="uk-open">
+          <a class="uk-accordion-title" href>
+            <p class="flex items-start">
+              Con có được học thử trước khi đăng ký không?
+            </p></a
+          >
+          <div class="uk-accordion-content">
+            <p>
+              Chip Chip là nền tảng học tiếng Anh trực tuyến dành cho trẻ em từ
+              5-12 tuổi. Với sứ mệnh giúp hàng triệu trẻ em Việt Nam có thể sử
+              dụng tiếng Anh như một ngôn ngữ thứ Hai, Chip Chip nỗ lực tạo ra
+              một môi trường tương tác hoàn toàn bằng tiếng Anh với những giáo
+              viên nước ngoài giỏi, xây dựng chương trình học tập trung vào giúp
+              các con khơi gợi niềm yêu thích tiếng Anh, tự tin sử dụng tiếng
+              Anh để giao tiếp thành thạo và phát âm giọng chuẩn bản xứ.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Đăng ký  -->
+    <div id="form-register" class="register-wrapper-new">
+      <div class="register-title-new">
+        <div class="register-title-bg-outer"></div>
+        <div class="register-title-bg-inner"></div>
+        <div class="register-title-text">
+          <span class="register-title-text-desktop"
+            >ĐĂNG KÝ TƯ VẤN & NHẬN SIÊU ƯU ĐÃI</span
+          >
+          <span class="register-title-text-mobile">
+            ĐĂNG KÝ TƯ VẤN<br />& NHẬN SIÊU ƯU ĐÃI
+          </span>
+        </div>
+      </div>
+      <div class="register-content-new">
+        <div class="register-form-wrapper">
+          <form class="register-form-new">
+            <div class="register-form-field">
+              <input
+                type="text"
+                id="register-name"
+                class="register-form-input-new"
+                placeholder="Vui lòng nhập họ tên con"
+                required
+              />
+              <label for="register-name" class="register-form-label-new"
+                >Họ tên con</label
+              >
+            </div>
+            <div class="register-form-field">
+              <input
+                type="text"
+                id="register-birthyear"
+                class="register-form-input-new"
+                placeholder="Vui lòng nhập năm sinh của con"
+                required
+              />
+              <label for="register-birthyear" class="register-form-label-new"
+                >Năm sinh</label
+              >
+            </div>
+            <div class="register-form-field">
+              <input
+                type="tel"
+                id="register-phone"
+                class="register-form-input-new"
+                placeholder="Vui lòng nhập số điện thoại của ba mẹ"
+                required
+              />
+              <label for="register-phone" class="register-form-label-new"
+                >Số điện thoại</label
+              >
+            </div>
+            <button type="submit" class="register-form-button">
+              Gửi thông tin đăng ký
+            </button>
+          </form>
+        </div>
+        <div class="register-image-wrapper">
+          <img
+            src="public/register-bg-desktop.svg"
+            alt="Register decoration"
+            class="register-image-new register-image-new-desktop"
+          />
+          <img
+            src="public/register-bg-mobile.svg"
+            alt="Register decoration"
+            class="register-image-new register-image-new-mobile"
+          />
         </div>
       </div>
     </div>
 
     <!-- footer -->
-    <div class="container footer">
-      <div>
-        <p class="footer-name">
-          Bản quyền 2025 thuộc về Công ty Cổ phần Công Nghệ & Giáo Dục Chip Chip
-        </p>
-        <p class="mt-2 mb-6">MST: 0109088958</p>
-        <div class="flex-items-center space-x-3 footer-desc">
-          <img
-            src="public/icon/c11-address.svg"
-            width="24"
-            height="24"
-            alt="address"
-          />
-          <p>
-            Tầng 5, nhà D, Khách sạn Thể Thao, 15 Lê Văn Thiêm, Thanh Xuân, Hà
-            Nội
-          </p>
+    <div class="footer">
+      <div class="footer-container">
+        <div class="footer-contact">
+          <div class="footer-contact-item">
+            <img
+              src="public/icon/c11-phone.svg"
+              width="24"
+              height="24"
+              alt="phone"
+              class="footer-contact-icon"
+            />
+            <span class="footer-contact-text">0965 901 801</span>
+          </div>
+          <div class="footer-contact-item">
+            <img
+              src="public/icon/lmail.svg"
+              width="24"
+              height="24"
+              alt="email"
+              class="footer-contact-icon"
+            />
+            <span class="footer-contact-text"
+              >chipchip.tienganhchobe@gmail.com</span
+            >
+          </div>
+          <div class="footer-contact-item footer-contact-item-address">
+            <img
+              src="public/icon/c11-address.svg"
+              width="24"
+              height="24"
+              alt="address"
+              class="footer-contact-icon"
+            />
+            <span class="footer-contact-text">
+              Tầng 5, nhà D, Khách sạn Thể Thao, 15 Lê Văn Thiêm, Thanh Xuân, Hà
+              Nội
+            </span>
+          </div>
         </div>
-        <div class="footer-desc flex-items-center space-x-3 mt-4">
-          <img
-            src="public/icon/c11-phone.svg"
-            width="24"
-            height="24"
-            alt="address"
-          />
-          <p>0965 901 801</p>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-left">
+            <p class="footer-copyright">
+              Bản quyền 2025 thuộc về Công ty Cổ phần Công Nghệ & Giáo Dục Chip
+              Chip
+            </p>
+            <p class="footer-mst">MST: 0109088958</p>
+          </div>
+          <div class="footer-bottom-right">
+            <img
+              src="public/footer-logo.png"
+              alt="Chip Chip Logo"
+              class="footer-logo"
+            />
+          </div>
         </div>
-      </div>
-      <div class="space-x-6 flex-items-center" style="height: fit-content">
-        <a href="#">
-          <img
-            src="public/icon/c11-fb.svg"
-            width="24"
-            class="footer-icon"
-            height="24"
-            alt="address"
-          />
-        </a>
-        <a href="#">
-          <img
-            src="public/icon/c11-youtube.svg"
-            width="24"
-            class="footer-icon"
-            height="24"
-            alt="address"
-          />
-        </a>
-        <a href="#">
-          <img
-            src="public/icon/c11-tiktok.svg"
-            width="24"
-            class="footer-icon"
-            height="24"
-            alt="address"
-          />
-        </a>
       </div>
     </div>
 
