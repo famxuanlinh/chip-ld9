@@ -53,14 +53,15 @@
 
 .faq-title-vector {
   position: absolute;
-  left: 93.87px;
-  top: 41px;
-  width: 163.7px;
-  height: 39.6px;
-  z-index: 0;
+  bottom: 0px;
+  left: 0;
+  width: 200px;
 
-  @include max-lg {
-    display: none;
+  @include maxw(1180) {
+    position: absolute;
+    top: 32px;
+    left: 20%;
+    width: 120px;
   }
 }
 

@@ -86,6 +86,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
+    padding: 0 !important;
 
     @include maxw(780) {
       grid-template-columns: 1fr;
@@ -112,6 +113,9 @@
 
     @include maxw(780) {
       padding: 16px;
+      justify-content: center;
+      align-items: center;
+      min-height: 248px;
     }
 
     & > :not(:last-child) {
@@ -138,7 +142,7 @@
       line-height: 48px; /* 100% */
 
       @include maxw(1180) {
-        font-size: 32px;
+        font-size: 40px;
         font-style: normal;
         font-weight: 700;
         line-height: 48px; /* 150% */
@@ -153,7 +157,8 @@
       text-align: center;
 
       @include maxw(1180) {
-        font-size: 16px;
+        font-size: 24px;
+
         font-style: normal;
         font-weight: 600;
         line-height: 24px; /* 150% */
