@@ -1,0 +1,18 @@
+@use "mixin" as *;
+@use "common";
+
+.combined-bg-section {
+  position: relative;
+  width: 100%;
+  background-image: url("../public/bg-cover.svg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: local;
+
+  @include maxw(768) {
+    background-image: url("../public/bg-cover-mobile.svg");
+    background-size: cover;
+    background-position: bottom;
+  }
+}

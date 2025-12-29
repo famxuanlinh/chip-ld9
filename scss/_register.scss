@@ -248,17 +248,29 @@
 
 // New register section styles
 .register-wrapper-new {
+  background-image: url("../public/bg-form-register.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include maxw(768) {
+    min-height: 961px;
+    padding: 0 0 40px;
+  }
+}
+
+.register-wrapper-new-container {
   max-width: 1080px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 24px 80px;
+  padding: 0;
   position: relative;
   min-height: 600px;
 
   @include maxw(768) {
     max-width: 375px;
     min-height: 961px;
-    padding: 0 0 40px;
+    padding: 0;
   }
 }
 
@@ -276,73 +288,33 @@
   z-index: 2;
 
   @include maxw(768) {
-    left: 50%;
-    transform: translateX(-50%);
+    left: 7px;
+    transform: none;
     width: 360px;
     max-width: calc(100% - 14px);
     height: 120px;
   }
 
-  &-bg-outer {
-    position: absolute;
-    top: 0;
-    left: 0;
+  &-image {
     width: 100%;
-    height: 40px;
-    background-color: #249823;
-    border-radius: 0;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  &-image-desktop {
+    display: block !important;
 
     @include maxw(768) {
-      height: 40px;
+      display: none !important;
     }
   }
 
-  &-bg-inner {
-    position: absolute;
-    top: 0;
-    left: 6px;
-    width: calc(100% - 12px);
-    height: 104px;
-    background-color: #4ab749;
-    border-radius: 0;
+  &-image-mobile {
+    display: none !important;
 
     @include maxw(768) {
-      width: calc(100% - 12px);
-      height: 120px;
-    }
-  }
-
-  &-text {
-    position: relative;
-    z-index: 1;
-    padding: 24px 32px 16px;
-    color: #ffffff;
-    font-family: "SF Pro Rounded", sans-serif;
-    font-weight: 800;
-    font-size: 32px;
-    line-height: 2em;
-    text-align: center;
-    white-space: nowrap;
-
-    @include maxw(768) {
-      font-size: 28px;
-      line-height: 1.4285714285714286em;
-      padding: 24px 32px 16px;
-      white-space: normal;
-    }
-
-    &-desktop {
-      @include maxw(768) {
-        display: none;
-      }
-    }
-
-    &-mobile {
-      display: none;
-
-      @include maxw(768) {
-        display: block;
-      }
+      display: block !important;
     }
   }
 }
@@ -357,13 +329,13 @@
   flex-direction: row;
   align-items: flex-end;
   gap: 64px;
-  padding: 100px 0 64px 64px;
+  padding: 0;
 
   @include maxw(768) {
     top: 40px;
     flex-direction: column;
     border-radius: 0 0 24px 24px;
-    padding: 120px 24px 24px;
+    padding: 0;
     gap: 0;
     align-items: stretch;
   }
@@ -375,10 +347,13 @@
   flex-direction: column;
   gap: 36px;
   width: 100%;
+  padding: 100px 0 64px 64px;
 
   @include maxw(768) {
     gap: 24px;
     width: 100%;
+    padding: 120px 24px 24px;
+    align-self: stretch;
   }
 }
 
@@ -386,6 +361,7 @@
   display: flex;
   flex-direction: column;
   gap: 36px;
+  width: 100%;
 
   @include maxw(768) {
     gap: 24px;
@@ -463,16 +439,18 @@
 
 .register-image-wrapper {
   flex-shrink: 0;
-  width: 504px;
-  height: 560px;
+  width: 513px;
+  height: 100%;
   display: flex;
-  align-items: flex-end;
+  object-fit: cover;
+  // align-items: flex-end;
 
   @include maxw(768) {
     width: 100%;
-    height: 416.67px;
+    height: 100%;
     margin-top: 0;
-    align-items: flex-start;
+    // align-items: flex-start;
+    // align-self: stretch;
   }
 }
 

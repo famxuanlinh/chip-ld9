@@ -45,30 +45,18 @@
     @extend .container;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: stretch;
+    align-items: stretch;
+    gap: 48px;
 
-    @include maxw(780) {
-      display: block;
-    }
-
-    & > :not(:last-child) {
-      @include maxw(780) {
-        margin-bottom: 24px;
-      }
-    }
-
-    &-right {
-      margin-top: 90px;
-      @include maxw(1180) {
-        margin-top: 48px;
-        padding: 0 16px 0 32px;
-      }
-    }
-
-    &-left {
-      @include maxw(1180) {
-        padding: 0 32px 0 16px;
-      }
+    @include maxw(1180) {
+      flex-direction: column;
+      gap: 24px;
+      max-width: 328px;
+      width: 100%;
+      margin: 0 auto;
+      padding-left: 16px;
+      padding-right: 16px;
     }
   }
 
@@ -83,64 +71,93 @@
     }
   }
   &-card {
-    width: 100%;
-    max-width: 278px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 16px;
 
-    @include maxw(780) {
-      padding: 0 8px;
+    @include maxw(1180) {
       width: 100%;
-      max-width: 100%;
+      align-self: stretch;
     }
 
     &.first {
-      color: #ff9914;
+      .online-class-card-number {
+        color: #ff9914;
+      }
+      .online-class-card-title {
+        color: #ff9914;
+      }
     }
     &.second {
-      color: #4ab749;
+      .online-class-card-number {
+        color: #4ab749;
+      }
+      .online-class-card-title {
+        color: #4ab749;
+      }
     }
     &.third {
-      color: #8e59ff;
+      .online-class-card-number {
+        color: #8e59ff;
+      }
+      .online-class-card-title {
+        color: #8e59ff;
+      }
     }
-
-    &-number {
-      font-size: 80px;
-      line-height: 80px;
-      font-weight: 900;
-
-      @include maxw(780) {
-        font-size: 48px;
-        line-height: 48px;
+    &.fourth {
+      .online-class-card-number {
+        color: #f57032;
+      }
+      .online-class-card-title {
+        color: #f57032;
       }
     }
 
-    &-title {
-      font-size: 32px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 48px; /* 150% */
-      padding: 24px 0 8px 0;
+    &-number {
+      font-family: "SF Pro Rounded", sans-serif;
+      font-size: 40px;
+      font-weight: 800;
+      line-height: 1.2em;
+      margin: 0;
 
       @include maxw(1180) {
-        padding-top: 16px;
+        font-size: 28px;
+        line-height: 1.1428571428571428em;
+      }
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      flex: 1;
+    }
+
+    &-title {
+      font-family: "SF Pro Rounded", sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.2857142857142858em;
+      margin: 0;
+
+      @include maxw(1180) {
         font-size: 20px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 32px; /* 160% */
+        line-height: 1.6em;
       }
     }
 
     &-desc {
+      font-family: "SF Pro Rounded", sans-serif;
       font-size: 18px;
-      font-style: normal;
       font-weight: 600;
-      line-height: 24px; /* 133.333% */
+      line-height: 1.3333333333333333em;
       color: #57595c;
+      margin: 0;
 
       @include maxw(1180) {
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 24px; /* 150% */
+        font-size: 18px;
+        line-height: 1.3333333333333333em;
       }
     }
   }

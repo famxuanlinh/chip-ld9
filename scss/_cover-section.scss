@@ -1,0 +1,49 @@
+@use "mixin" as *;
+@use "common";
+
+.cover-section {
+  position: relative;
+  width: 100%;
+  height: 717px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 201px;
+
+  @include maxw(768) {
+    height: 472px;
+    padding-top: 163px;
+    align-items: flex-start;
+  }
+
+  &-image-wrapper {
+    position: relative;
+    z-index: 1;
+    width: 795.23px;
+    height: 516.42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include maxw(1440) {
+      width: 100%;
+      max-width: 795.23px;
+      margin: 0 auto;
+    }
+
+    @include maxw(768) {
+      width: 420px;
+      height: 272px;
+      margin-left: -22px;
+      max-width: calc(100% + 44px);
+    }
+  }
+
+  &-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+}
