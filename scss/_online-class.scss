@@ -2,6 +2,12 @@
 @use "common";
 
 .online-class {
+  margin: 52px 0 87px 0;
+
+  @include maxw(1180) {
+    margin-top: 22px 0 44px 0;
+  }
+
   &-title {
     color: #ff9914;
     text-align: center;

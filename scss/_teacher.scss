@@ -84,16 +84,12 @@
     @extend .container;
 
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
     gap: 16px;
 
     @include maxw(780) {
-      display: block;
+      grid-template-columns: 1fr;
       gap: 16px;
-    }
-
-    & > :not(:last-child) {
-      margin-bottom: 16px;
     }
   }
 
@@ -104,7 +100,7 @@
     }
   }
   &-card {
-    height: fit-content;
+    height: 100%;
     width: 100%;
     border-radius: 16px;
     display: flex;
@@ -112,15 +108,10 @@
     flex-direction: column;
     padding: 24px;
     color: white;
-    display: flex;
-    flex-direction: column;
     background-color: #64d563;
-    flex: none;
 
     @include maxw(780) {
       padding: 16px;
-      width: 100%;
-      max-width: 100%;
     }
 
     & > :not(:last-child) {
@@ -159,6 +150,7 @@
       font-style: normal;
       font-weight: 600;
       line-height: 24px; /* 133.333% */
+      text-align: center;
 
       @include maxw(1180) {
         font-size: 16px;

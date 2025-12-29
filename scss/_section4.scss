@@ -3,7 +3,10 @@
 .section4 {
   position: relative;
   width: 100%;
-  background-color: #fff3e2;
+  background-image: url(/public/section4-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
   padding: 48px 0;
   overflow: hidden;
 
