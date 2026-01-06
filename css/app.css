@@ -2083,7 +2083,7 @@ p {
 }
 @media (max-width: 1023px) {
   .difference-card-rectangle {
-    width: 279px;
+    width: calc(100% - 30px);
     height: 205px;
     left: 15.5px;
     top: 15px;
@@ -2184,17 +2184,14 @@ p {
 
 .difference-scroll-container {
   width: 100%;
-  overflow: hidden;
-  padding: 0 24px;
 }
 
 .difference-scroll-items {
   display: flex;
-  gap: 16px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  padding-bottom: 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
 }
 
 .difference-card-mobile {
@@ -2202,11 +2199,9 @@ p {
   display: grid;
   grid-template-columns: 1fr;
   gap: 12px;
-  min-width: 312px;
-  width: 312px;
+  width: 100%;
   border-radius: 24px;
   overflow: visible;
-  scroll-snap-align: start;
 }
 
 .difference-card-mobile .difference-card-bg {
@@ -2229,7 +2224,7 @@ p {
   background-color: #ffdfce;
   border-radius: 32px;
   z-index: 1;
-  width: 279px;
+  width: calc(100% - 30px);
   height: 205px;
   left: 15.5px;
   top: 15px;
@@ -2243,7 +2238,7 @@ p {
   background: #ffffff;
   border-radius: 24px;
   padding: 16px;
-  width: 312px;
+  width: 100%;
   height: 204px;
   display: flex;
   flex-direction: column;
