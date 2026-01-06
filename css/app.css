@@ -839,6 +839,7 @@ p {
 @media screen and (max-width: 1180px) {
   .online-class-card {
     width: 100%;
+    gap: 8px;
     align-self: stretch;
   }
 }
